@@ -42,7 +42,7 @@ function MovieList({ title, data }) {
                         <div key={item.id} className="w-[200px] h-[300px] relative group" onClick={() => handleTrailer(item.id)}>
                             <div className='group-hover:scale-105 transition-transform duration-300 ease-in-out w-full h-full'>
                                 <div className='absolute top-0 left-0 w-full h-full bg-black/40'></div>
-                                <img src={`${import.meta.env.VITE_URL_IMG}${item.poster_path}`} alt='1' className='w-full h-full object-cover' />
+                                <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt='1' className='w-full h-full object-cover' />
                                 <div className='absolute bottom-4 left-2'>
                                     <p className='uppercase text-md'>{item.title || item.original_title}</p>
                                 </div>
